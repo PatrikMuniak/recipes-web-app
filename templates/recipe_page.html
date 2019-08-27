@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dulcis n Fundo</title>
+  </head>
+  <body>
+    <h1>Dulcis N Fundo</h1>
+  {% block content %}
+
+  <p>{{ recipe.recipe_name | title}}</p>
+  <p>{{ recipe.ingredients }}</p>
+  <p>{{ recipe.recipe_description }}</p>
+
+  {% endblock %}
+  </body>
+</html>

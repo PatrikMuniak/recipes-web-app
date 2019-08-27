@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dulcis N Fundo</title>
+  </head>
+  <body>
+    <h1>Dulcis N Fundo</h1>
+    <p>Search results</p>
+
+    {% block content %}
+
+    {% for recipe in results %}
+     <h3>Recipe Name</h3>
+
+       <a href="/recipe/?recipe_name={{ recipe.recipe_name }}">{{ recipe.recipe_name }}</a>
+      <h3>Ingredients</h3>
+      <p>{{ recipe.ingredients }}</p>
+
+    {% endfor %}
+
+    {% endblock %}
+
+  </body>
+</html>
